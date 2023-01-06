@@ -1,0 +1,36 @@
+Estructira condicional anidada
+
+Realizr un programa que pueda realizar una suma, una resta, una multiplicación o una división de dos numeros enteros,
+dependiendo de la decisión del usurio.
+
+-Si operación es igual a 1, realizar una suma
+-Si operación es igual a 2, realizar una resta
+-Si operación es igual a 3, realizar una multiplicación
+-Si operación es igual a 4, realizar una división
+
+
+public class Anidadas {
+ public void main(String args[]){
+
+  int operacion = 1;
+  int num_uno   = 8;
+  int num_dos   = 4;
+  int resultado = 0;
+  
+  if(operacion == 1){
+   resultado = num_uno + num_dos;
+   System.out.println("El resultado de la suma es: " + resultado);
+  } else if(operacion == 2){
+     resultado = num_uno - num_dos;
+    System.out.println("El resultado de la resta es: " + resultado);
+  }else if(operacion == 3){
+     resultado = num_uno * num_dos;
+    System.out.println("El resultado de la multiplicación es: " + resultado);
+  }else if(operacion == 4){
+     resultado = num_uno / num_dos;
+    System.out.println("El resultado de la división es: " + resultado);
+  }else {
+    System.out.println("La opción que elegiste no existe");
+  }
+ }
+}
